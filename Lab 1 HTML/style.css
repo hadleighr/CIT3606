@@ -1,3 +1,19 @@
 body {
-    
+        background-color: lightpink;
+}
+h1 {
+        color: hotpink;
+        text-align: center;
+}
+header,footer{
+    background-color: lightblue;
+    text-align: center;
+    padding:5px;
+}
+.flex-contain{
+    display:flex;
+}
+#text{
+    font-size: 40px;
+    padding:10px;
 }
