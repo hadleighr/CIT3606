@@ -1,3 +1,25 @@
-body {
-    
+
+.button {
+  border: none;
+  color: hotpink;
+  background-color: palegreen;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {
+  border: none;
+  color: palegreen;
+  background-color: hotpink;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }

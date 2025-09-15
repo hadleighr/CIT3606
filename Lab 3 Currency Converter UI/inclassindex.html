@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>CIT 3606 Lab 2 JS Intro</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script>
+       
+            function hello() {
+                name= document.getElementById("username").value;
+                document.getElementById("username").value= "Hi " + name + "!";
+                alert("Hi " + name + "!" );
+            }
+
+            function goodbye() {
+                alert("Bye!");
+            }
+        </script>
+        <body>
+        name: <input type="text" id="username"> 
+        <br>
+       
+       
+       
+       
+        <button class = "button" onclick="hello()"> button1 </button>
+        <button class = "button2" onclick="goodbye()"> button2 </button>
+            
+        
+
+        
+    </body>
+</html>
