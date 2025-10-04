@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>CIT 3606 Lab 4</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <h1 id="myHeader"> Hadleigh's In Class Page</h1>
+<script>
+        const myHeader = document.getElementById("myHeader");
+        myHeader.onmouseover= function() {
+            myHeader.style.color = "hotpink";
+            myHeader.textContent = "You clicked me!";
+            myHeader.style.fontSize = "xx-large";
+            myHeader.style.backgroundColor = "pink";
+        }
+        myHeader.onmouseout= function() {
+            myHeader.style.color = "black";
+            myHeader.textContent = "Hadleigh's In Class Page";
+            myHeader.style.fontSize = "xx-large";
+            myHeader.style.backgroundColor = "white";
+
+        }
+   
+    </script>
