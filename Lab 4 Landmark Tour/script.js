@@ -1,10 +1,12 @@
 
-function changeImage(imagefile) {
+function changeImage(imagefile, description, map) {
     document.getElementById("landmark").src = imagefile;
+    document.getElementById("description").innerHTML = description;
+    document.getElementById("map").src = map
 }
 
 function resizeImage() {
-    const selectedSize = document.getElementById("landmark").value;
+    const selectedSize = document.getElementById("menu").value;
     const image = document.getElementById("landmark");
     if (selectedSize === "small") {
         image.style.width = "400px";
