@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>CIT 3606 Lab 4</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+  
+    </head>
+    <body>
+        <h1> Yeti's Game </h1>
+       <canvas id="myCanvas" 
+    width="500" height="300"
+    style="border:8px dashed rgb(255, 93, 120);">
+</canvas>
+<script>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+ctx.fillStyle = "pink";
+ctx.fillRect(canvas.width/2-50, canvas.height/2-50,100,100); 
+ctx.fillStyle = "hotpink";
+ctx.arc(200, 200, 30, 0, 360);
+ctx.fill();
+const myImg = new Image();
+myImg.src = 'Yeti.jpg';
+myImg.onload = function(){
+ctx.drawImage(myImg, 50, 50, 125, 125);
+}
+myCanvas.onmousedown = function(event) {
+    const rect = canvas.getBoundingClientRect();
+    const x = event.clientX - rect.left;
+    const y = event.clientY - rect.top;
+    alert("You clicked at" + x + "," + y);
+}
+  setInterval(drawFunction, 500);  
+  let x = 10;
+  let y = 10;
+  function drawFunction() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    x+=2;
+    y+= Math.random()*10;
+    ctx.drawImage(myImg, x, y, 125, 125);
+
+    document.onkeydown = function(event) {
+        if(event.key == "ArrowUp") {
+            y-=2;
+        }
+        if(event.key == "ArrowDown") {
+            y+=2;
+        }
+        if(event.key == "ArrowLeft") {
+            x-=2;
+        }
+        if(event.key == "ArrowRight") {
+            x+=2;
+        }
+    }
+  }
+      
+
+
+
+
+   
+    </script>
